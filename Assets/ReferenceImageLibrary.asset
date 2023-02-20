@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ReferenceImageLibrary
+  m_EditorClassIdentifier: 
+  m_GuidLow: 5419246751043326926
+  m_GuidHigh: 13486050530104488615
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5280285960697366034
+      m_GuidHigh: 15392539478845370300
+    m_SerializedTextureGuid:
+      m_GuidLow: 10701069844580331591
+      m_GuidHigh: 2173817481348060184
+    m_Size: {x: 0.1, y: 0.1443609}
+    m_SpecifySize: 1
+    m_Name: egg
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5120887030519530228
+      m_GuidHigh: 8814396597371928717
+    m_SerializedTextureGuid:
+      m_GuidLow: 16497942644286603362
+      m_GuidHigh: 11615469463224415434
+    m_Size: {x: 0.1, y: 0.1443609}
+    m_SpecifySize: 1
+    m_Name: tomato
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5758933666810913011
+      m_GuidHigh: 12703397439321640335
+    m_SerializedTextureGuid:
+      m_GuidLow: 2614411539387602185
+      m_GuidHigh: 7761905413942911321
+    m_Size: {x: 0.1, y: 0.1}
+    m_SpecifySize: 1
+    m_Name: 02
+    m_Texture: {fileID: 0}
