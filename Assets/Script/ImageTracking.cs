@@ -80,5 +80,28 @@ public class ImageTracking : MonoBehaviour
             // Or, simply set the prefab instance to inactive
             //_instantiatedPrefabs[trackedImage.referenceImage.name].SetActive(false);
         }
+
+
+        // 檢查trackedImages列表中是否包含要處理的兩個物件
+        ARTrackedImage object1 = null;
+        ARTrackedImage object2 = null;
+        foreach (ARTrackedImage trackedImage in eventArgs.updated)
+        {
+            if (trackedImage.referenceImage.name == "ObjectName1")
+            {
+                object1 = trackedImage;
+            }
+            else if (trackedImage.referenceImage.name == "ObjectName2")
+            {
+                object2 = trackedImage;
+            }
+        }
+
+        // 如果trackedImages列表中包含您要處理的兩個物件，則執行相應的操作
+        if (object1 != null && object2 != null)
+        {
+            Debug.Log("add tomatoeggs");
+        }
+
     }
 }

@@ -19,8 +19,8 @@ MonoBehaviour:
       m_GuidLow: 5280285960697366034
       m_GuidHigh: 15392539478845370300
     m_SerializedTextureGuid:
-      m_GuidLow: 10701069844580331591
-      m_GuidHigh: 2173817481348060184
+      m_GuidLow: 321488300264830974
+      m_GuidHigh: 17468683334387007626
     m_Size: {x: 0.1, y: 0.1443609}
     m_SpecifySize: 1
     m_Name: egg
@@ -29,8 +29,8 @@ MonoBehaviour:
       m_GuidLow: 5120887030519530228
       m_GuidHigh: 8814396597371928717
     m_SerializedTextureGuid:
-      m_GuidLow: 16497942644286603362
-      m_GuidHigh: 11615469463224415434
+      m_GuidLow: 8414063061719697334
+      m_GuidHigh: 6744561027626494555
     m_Size: {x: 0.1, y: 0.1443609}
     m_SpecifySize: 1
     m_Name: tomato
