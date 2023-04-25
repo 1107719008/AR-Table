@@ -3,10 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(ARTrackedImageManager))]
 public class ImageTracking : MonoBehaviour
 {
+    //cook botton code - cook or pass cook
+    public Button cookBtn;
+    public Button passCookBtn;
+
+
     // Reference to AR tracked image manager component
     private ARTrackedImageManager _trackedImagesManager;
 
@@ -14,7 +20,7 @@ public class ImageTracking : MonoBehaviour
     // as their corresponding 2D images in the reference image library 
     public GameObject[] ArPrefabs;
 
-    private GameObject obj = null;
+  
 
     private readonly Dictionary<string, GameObject> _instantiatedPrefabs = new Dictionary<string, GameObject>();
     //  foreach(var trackedImage in eventArgs.added){
@@ -27,15 +33,32 @@ public class ImageTracking : MonoBehaviour
     //   && !_instantiatedPrefabs.ContainsKey(imageName)){
     // Instantiate the prefab, parenting it to the ARTrackedImage
     //  var newPrefab = Instantiate(curPrefab, trackedImage.transform);
+    private void Start()
+    { 
+        //cook or not btn
+        cookBtn.onClick.AddListener(Cookable);
+        passCookBtn.onClick.AddListener(DontCook);
+    }
     void Awake()
     {
         _trackedImagesManager = GetComponent<ARTrackedImageManager>();
     }
     private void Update()
     {
-        obj = GameObject.Find("egg");
-        Debug.Log(obj.name);
+        
     }
+
+    //btn listener
+    void Cookable()
+    {
+
+    }
+    void DontCook()
+    {
+
+    }
+
+
     private void OnEnable()
     {
         _trackedImagesManager.trackedImagesChanged += OnTrackedImagesChanged;
@@ -87,13 +110,15 @@ public class ImageTracking : MonoBehaviour
         ARTrackedImage object2 = null;
         foreach (ARTrackedImage trackedImage in eventArgs.updated)
         {
-            if (trackedImage.referenceImage.name == "ObjectName1")
+            if (trackedImage.referenceImage.name == "egg")
             {
                 object1 = trackedImage;
+                Debug.Log(object1.name + "-obj1");
             }
-            else if (trackedImage.referenceImage.name == "ObjectName2")
+            else if (trackedImage.referenceImage.name == "tomato")
             {
                 object2 = trackedImage;
+                Debug.Log(object1.name + "-obj2");
             }
         }
 

@@ -292,7 +292,7 @@ PrefabInstance:
     - target: {fileID: 7372161437071527758, guid: 13ea70951d91644ada28845707dc1bc7,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7372161437071527759, guid: 13ea70951d91644ada28845707dc1bc7,
         type: 3}
@@ -2367,7 +2367,7 @@ SpriteRenderer:
   m_Size: {x: 23.603092, y: 16.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1076207993
@@ -4055,6 +4055,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b5f160aed3fb4307ac538bb052d1590, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cookBtn: {fileID: 0}
+  passCookBtn: {fileID: 0}
   ArPrefabs:
   - {fileID: 6149240370210839606, guid: 2c69f8dacba84478f8c50f269d2a524f, type: 3}
   - {fileID: 8984652635310355377, guid: a639256bf210645c9aeeec25d56061d6, type: 3}
