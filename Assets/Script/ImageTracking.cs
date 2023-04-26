@@ -14,6 +14,10 @@ public class ImageTracking : MonoBehaviour
     private int CookCases = 0;
     public GameObject TestObj;
 
+    //for detect matching status
+    public Text MatchStatus;
+
+
     // Reference to AR tracked image manager component
     private ARTrackedImageManager _trackedImagesManager;
 
@@ -46,13 +50,12 @@ public class ImageTracking : MonoBehaviour
     }
     private void Update()
     {
-        
+        MatchStatus.text = CookCases.ToString();
     }
 
     //btn listener
     void Cookable()
     {
-        
         switch (CookCases)
         {
             case 1:
@@ -63,18 +66,17 @@ public class ImageTracking : MonoBehaviour
                 break;
             case 4:
                 break;
-            case 5:
-                break;
-            case 6:
-                break;
-            default:
+           
+            default://error matching - show trash
+
                 break;
 
         }
     }
     void DontCook()
     {
-
+        //this function is for pass the cook state
+        Debug.Log("pass this cook");
     }
 
 
@@ -105,12 +107,14 @@ public class ImageTracking : MonoBehaviour
             }
         }
         //_instantiatedPrefabs[trackedImage.referenceImage.name].SetActive(trackedImage.trackingState == TrackingState.Tracking);
-    
-        foreach(var trackedImage in eventArgs.updated)
+
+        
+        foreach (var trackedImage in eventArgs.updated)
         {
             Debug.Log("is updated");
             _instantiatedPrefabs[trackedImage.referenceImage.name].SetActive(trackedImage.trackingState == TrackingState.Tracking);
 
+            
         }
 
         foreach (var trackedImage in eventArgs.removed)
@@ -124,6 +128,7 @@ public class ImageTracking : MonoBehaviour
             //_instantiatedPrefabs[trackedImage.referenceImage.name].SetActive(false);
         }
 
+        
 
         // 檢查trackedImages列表中是否包含要處理的兩個物件
         ARTrackedImage object1 = null;
@@ -146,7 +151,8 @@ public class ImageTracking : MonoBehaviour
         if (object1 != null && object2 != null)
         {
             Debug.Log("add tomatoeggs");
-            Instantiate(TestObj);
+            //Instantiate(TestObj);
+            CookCases = 1;
         }
 
     }
