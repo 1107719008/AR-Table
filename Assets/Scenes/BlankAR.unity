@@ -4057,6 +4057,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cookBtn: {fileID: 0}
   passCookBtn: {fileID: 0}
+  TestObj: {fileID: 6009386883706344860, guid: 64252ec151d2944c590fce2138f091e2, type: 3}
   ArPrefabs:
   - {fileID: 6149240370210839606, guid: 2c69f8dacba84478f8c50f269d2a524f, type: 3}
   - {fileID: 8984652635310355377, guid: a639256bf210645c9aeeec25d56061d6, type: 3}

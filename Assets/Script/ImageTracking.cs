@@ -11,7 +11,8 @@ public class ImageTracking : MonoBehaviour
     //cook botton code - cook or pass cook
     public Button cookBtn;
     public Button passCookBtn;
-
+    private int CookCases = 0;
+    public GameObject TestObj;
 
     // Reference to AR tracked image manager component
     private ARTrackedImageManager _trackedImagesManager;
@@ -51,7 +52,25 @@ public class ImageTracking : MonoBehaviour
     //btn listener
     void Cookable()
     {
+        
+        switch (CookCases)
+        {
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+            case 6:
+                break;
+            default:
+                break;
 
+        }
     }
     void DontCook()
     {
@@ -91,6 +110,7 @@ public class ImageTracking : MonoBehaviour
         {
             Debug.Log("is updated");
             _instantiatedPrefabs[trackedImage.referenceImage.name].SetActive(trackedImage.trackingState == TrackingState.Tracking);
+
         }
 
         foreach (var trackedImage in eventArgs.removed)
@@ -126,7 +146,11 @@ public class ImageTracking : MonoBehaviour
         if (object1 != null && object2 != null)
         {
             Debug.Log("add tomatoeggs");
+            Instantiate(TestObj);
         }
 
     }
+    
+
+
 }
