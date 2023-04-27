@@ -6217,7 +6217,9 @@ MonoBehaviour:
   - {fileID: 8984652635310355377, guid: a639256bf210645c9aeeec25d56061d6, type: 3}
   - {fileID: 6682632142803064970, guid: 64e18c94eb47049b0882687823dc919a, type: 3}
   - {fileID: 105762835713425090, guid: 53bb1724e40834a0c954ef645661229e, type: 3}
-  - {fileID: 8867952903752524247, guid: 528b0efbee44d464ba10ecb7f95dc450, type: 3}
+  - {fileID: 8120857606263926176, guid: e50789235dde443ee9bd4d469e1808c1, type: 3}
+  - {fileID: 8663543715964409767, guid: d8ad5abff1db54f40b59a04bd68c59f0, type: 3}
+  - {fileID: 3989776083755908864, guid: 95173b2b41a13463cb061c2b54c9ccb0, type: 3}
 --- !u!1001 &1661614272
 PrefabInstance:
   m_ObjectHideFlags: 0

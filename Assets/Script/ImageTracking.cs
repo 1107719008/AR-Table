@@ -133,6 +133,11 @@ public class ImageTracking : MonoBehaviour
         // 檢查trackedImages列表中是否包含要處理的兩個物件
         ARTrackedImage object1 = null;
         ARTrackedImage object2 = null;
+        ARTrackedImage object3 = null;
+        ARTrackedImage object4 = null;
+        ARTrackedImage object5 = null;
+        ARTrackedImage object6 = null;
+        ARTrackedImage object7 = null;
         foreach (ARTrackedImage trackedImage in eventArgs.updated)
         {
             if (trackedImage.referenceImage.name == "egg")
@@ -143,17 +148,69 @@ public class ImageTracking : MonoBehaviour
             else if (trackedImage.referenceImage.name == "tomato")
             {
                 object2 = trackedImage;
-                Debug.Log(object1.name + "-obj2");
+                Debug.Log(object2.name + "-obj2");
+            }
+            else if (trackedImage.referenceImage.name == "carrot")
+            {
+                object3 = trackedImage;
+
+            }
+            else if (trackedImage.referenceImage.name == "advocoda")
+            {
+                object4 = trackedImage;
+
+
+            }
+            else if (trackedImage.referenceImage.name == "milk")
+            {
+                object5 = trackedImage;
+
+
+            }
+            else if (trackedImage.referenceImage.name == "tofu")
+            {
+                object6 = trackedImage;
+
+
+            }
+            else if (trackedImage.referenceImage.name == "potato")
+            {
+                object7 = trackedImage;
+
+
+            }
+            else
+            {
+                Debug.Log("Nothing detected");
             }
         }
 
-        // 如果trackedImages列表中包含您要處理的兩個物件，則執行相應的操作
+            // 如果trackedImages列表中包含您要處理的兩個物件，則執行相應的操作
         if (object1 != null && object2 != null)
         {
             Debug.Log("add tomatoeggs");
-            //Instantiate(TestObj);
             CookCases = 1;
+        }else if (object3 != null && object7 != null)
+        {
+            Debug.Log("add potatoCarrot");
+            CookCases = 2;
         }
+        else if (object4 != null && object5 != null)
+        {
+            Debug.Log("add fruitMilk");
+            CookCases = 3;
+        }
+        else if (object1 != null && object6 != null)
+        {
+            Debug.Log("add tomatoSoup");
+            CookCases = 4;
+        }
+        else
+        {
+            Debug.Log("not matched");
+            CookCases = 0;
+        }
+        
 
     }
     
