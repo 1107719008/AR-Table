@@ -25,9 +25,16 @@ public class InstantiateDestroy : MonoBehaviour
     public GameObject kitchenBG;
     public GameObject villageBG;
 
-    public GameObject cookafterCanvas;
+    
 
     public Text textObj;
+
+    [SerializeField]
+    public GameObject Canvas1;//tomatoegg
+    public GameObject Canvas2;//potatocarrot
+    public GameObject Canvas3;//avocodaMilk
+    public GameObject Canvas4;//tomatoTofu
+    public GameObject CanvasTrash;
 
     void Start()
     {
@@ -94,7 +101,27 @@ public class InstantiateDestroy : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
         //my code here after 3 seconds
-        cookafterCanvas.SetActive(true);
+        //cookafterCanvas.SetActive(true);
+        switch (ImageTracking.CookCasesToCanvas)
+        {
+            case 1:
+                Canvas1.SetActive(true);
+                break;
+            case 2:
+                Canvas2.SetActive(true);
+                break;
+            case 3:
+                Canvas3.SetActive(true);
+                break;
+            case 4:
+                Canvas4.SetActive(true);
+                break;
+
+            default://error matching - show trash
+                CanvasTrash.SetActive(true);
+                break;
+
+        }
 
     }
 }

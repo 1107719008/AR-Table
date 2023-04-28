@@ -9,13 +9,17 @@ using UnityEngine.UI;
 public class ImageTracking : MonoBehaviour
 {
     //cook botton code - cook or pass cook
-    public Button cookBtn;
+    //public Button cookBtn;
     public Button passCookBtn;
     private int CookCases = 0;
-    public GameObject TestObj;
+    public static int CookCasesToCanvas = 0;
 
     //for detect matching status
     public Text MatchStatus;
+
+    //for different Canvas
+    
+    public Button setCookBtn;
 
 
     // Reference to AR tracked image manager component
@@ -41,8 +45,9 @@ public class ImageTracking : MonoBehaviour
     private void Start()
     { 
         //cook or not btn
-        cookBtn.onClick.AddListener(Cookable);
+        //cookBtn.onClick.AddListener(Cookable);
         passCookBtn.onClick.AddListener(DontCook);
+        setCookBtn.onClick.AddListener(checkCookStyle);//determind the cook food
     }
     void Awake()
     {
@@ -52,26 +57,34 @@ public class ImageTracking : MonoBehaviour
     {
         MatchStatus.text = CookCases.ToString();
     }
+    void checkCookStyle()
+    {
+        CookCasesToCanvas = CookCases;
+    }
 
     //btn listener
     void Cookable()
     {
-        switch (CookCases)
-        {
-            case 1:
-                break;
-            case 2:
-                break;
-            case 3:
-                break;
-            case 4:
-                break;
+        //switch (CookCasesToCanvas)
+        //{
+        //    case 1:
+        //        Canvas1.SetActive(true);
+        //        break;
+        //    case 2:
+        //        Canvas2.SetActive(true);
+        //        break;
+        //    case 3:
+        //        Canvas3.SetActive(true);
+        //        break;
+        //    case 4:
+        //        Canvas4.SetActive(true);
+        //        break;
            
-            default://error matching - show trash
+        //    default://error matching - show trash
+        //        CanvasTrash.SetActive(true);
+        //        break;
 
-                break;
-
-        }
+        //}
     }
     void DontCook()
     {
