@@ -19,9 +19,9 @@ MonoBehaviour:
       m_GuidLow: 5280285960697366034
       m_GuidHigh: 15392539478845370300
     m_SerializedTextureGuid:
-      m_GuidLow: 16488371167081932813
-      m_GuidHigh: 8849004013558692088
-    m_Size: {x: 0.1, y: 0.073218144}
+      m_GuidLow: 15293442259695534080
+      m_GuidHigh: 8992662855422324651
+    m_Size: {x: 0.1, y: 0.09148936}
     m_SpecifySize: 1
     m_Name: egg
     m_Texture: {fileID: 0}
@@ -29,9 +29,9 @@ MonoBehaviour:
       m_GuidLow: 5120887030519530228
       m_GuidHigh: 8814396597371928717
     m_SerializedTextureGuid:
-      m_GuidLow: 6072420757921681467
-      m_GuidHigh: 16204974297954371240
-    m_Size: {x: 0.1, y: 0.10296053}
+      m_GuidLow: 11848054656879475040
+      m_GuidHigh: 6876559715572709913
+    m_Size: {x: 0.1, y: 0.088436835}
     m_SpecifySize: 1
     m_Name: tomato
     m_Texture: {fileID: 0}
@@ -39,9 +39,9 @@ MonoBehaviour:
       m_GuidLow: 5313953291550759878
       m_GuidHigh: 7052187168804868491
     m_SerializedTextureGuid:
-      m_GuidLow: 15303259042781675007
-      m_GuidHigh: 7780141373577642072
-    m_Size: {x: 0.1, y: 0.0754902}
+      m_GuidLow: 3788855478209406610
+      m_GuidHigh: 8657044594268116633
+    m_Size: {x: 0.1, y: 0.09325582}
     m_SpecifySize: 1
     m_Name: carrot
     m_Texture: {fileID: 0}
@@ -49,9 +49,9 @@ MonoBehaviour:
       m_GuidLow: 5639745531223001910
       m_GuidHigh: 17293173899311462586
     m_SerializedTextureGuid:
-      m_GuidLow: 15309974292222016311
-      m_GuidHigh: 2136099394416671736
-    m_Size: {x: 0.1, y: 0.07263158}
+      m_GuidLow: 9535081483111365074
+      m_GuidHigh: 13041021842296096826
+    m_Size: {x: 0.1, y: 0.090364024}
     m_SpecifySize: 1
     m_Name: potato
     m_Texture: {fileID: 0}
@@ -59,9 +59,9 @@ MonoBehaviour:
       m_GuidLow: 4918518576505675350
       m_GuidHigh: 1511408848136885895
     m_SerializedTextureGuid:
-      m_GuidLow: 15322132091570590817
-      m_GuidHigh: 8553354743696718457
-    m_Size: {x: 0.1, y: 0.06830357}
+      m_GuidLow: 13007464648258718903
+      m_GuidHigh: 3701720600183855547
+    m_Size: {x: 0.1, y: 0.08673684}
     m_SpecifySize: 1
     m_Name: tofu
     m_Texture: {fileID: 0}
@@ -69,9 +69,9 @@ MonoBehaviour:
       m_GuidLow: 5601621443515070086
       m_GuidHigh: 9126513874222760581
     m_SerializedTextureGuid:
-      m_GuidLow: 15329934708247630467
-      m_GuidHigh: 17755202837753997961
-    m_Size: {x: 0.1, y: 0.066523604}
+      m_GuidLow: 330206497173316163
+      m_GuidHigh: 8596956842045531115
+    m_Size: {x: 0.1, y: 0.09088937}
     m_SpecifySize: 1
     m_Name: avocado
     m_Texture: {fileID: 0}
@@ -79,9 +79,9 @@ MonoBehaviour:
       m_GuidLow: 5302275004746620762
       m_GuidHigh: 17220749976894787739
     m_SerializedTextureGuid:
-      m_GuidLow: 17593219076807922549
-      m_GuidHigh: 3627484718372960891
-    m_Size: {x: 0.1, y: 0.07363637}
+      m_GuidLow: 4954237962770256772
+      m_GuidHigh: 2731898292390290665
+    m_Size: {x: 0.1, y: 0.09248292}
     m_SpecifySize: 1
     m_Name: milk
     m_Texture: {fileID: 0}
