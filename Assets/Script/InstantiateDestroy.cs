@@ -39,6 +39,8 @@ public class InstantiateDestroy : MonoBehaviour
     public bool yummyMeal;
     private string sceneName;
 
+    public GameObject forDestroyAnimation;
+
     void Start()
     {
         //get scene info
@@ -51,7 +53,7 @@ public class InstantiateDestroy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //Debug.Log(forDestroyAnimation.name);
     }
 
     public void CheckSceneStateAndMeal()
@@ -143,31 +145,45 @@ public class InstantiateDestroy : MonoBehaviour
     public void PinpleAnimationPlay()
     {
         Instantiate(PinpleAnimationPrefab, AniCanvas.transform);
-        Destroy(PinpleAnimationPrefab, PinpleTime);
+        //Destroy(PinpleAnimationPrefab, PinpleTime);
+    }
+
+    //heal Animation
+    public void OkayAnimationPlay()
+    {
+        forDestroyAnimation = Instantiate(OkayAnimationPrefab, AniCanvas.transform);
+        
+        textObj.text = "太好了！痘痘的情況改善了！";
+    }
+    public void OkayDestroy()
+    {
+        Destroy(forDestroyAnimation);
     }
 
     //yummy animation
     public void YummyAnimationPlay()
     {
-        Instantiate(YummyAnimationPrefab, AniCanvas.transform);
+        forDestroyAnimation=Instantiate(YummyAnimationPrefab, AniCanvas.transform);
         //Destroy(YummyAnimationPrefab, YummyTime);
         textObj.text = "太好吃了吧！！！";
     }
     public void YummyDestroy()
     {
-        Destroy(YummyAnimationPrefab, YummyTime);
+        GameObject toDel = GameObject.Find("yummy(Clone)");
+        Destroy(toDel);
     }
 
     public void DisgustAnimationPlay()
     {
-        Instantiate(DisgustAnimationPrefab, AniCanvas.transform);
-        Destroy(DisgustAnimationPrefab, DisgustTime);
+        forDestroyAnimation = Instantiate(DisgustAnimationPrefab, AniCanvas.transform);
+        //Destroy(DisgustAnimationPrefab, DisgustTime);
     }
+
 
     public void WinAnimationPlay()
     {
         Instantiate(WinAnimationPrefab, AniCanvas.transform);
-        Destroy(WinAnimationPrefab, WinTime);
+        //Destroy(WinAnimationPrefab, WinTime);
     }
 
 
