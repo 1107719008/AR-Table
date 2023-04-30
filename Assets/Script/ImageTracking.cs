@@ -168,7 +168,7 @@ public class ImageTracking : MonoBehaviour
                 object3 = trackedImage;
 
             }
-            else if (trackedImage.referenceImage.name == "advocoda")
+            else if (trackedImage.referenceImage.name == "avocoda")
             {
                 object4 = trackedImage;
 
@@ -213,7 +213,7 @@ public class ImageTracking : MonoBehaviour
             Debug.Log("add fruitMilk");
             CookCases = 3;
         }
-        else if (object1 != null && object6 != null)
+        else if (object2 != null && object6 != null)
         {
             Debug.Log("add tomatoSoup");
             CookCases = 4;

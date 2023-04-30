@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class InstantiateDestroy : MonoBehaviour
 {
@@ -35,16 +36,88 @@ public class InstantiateDestroy : MonoBehaviour
     public GameObject Canvas3;//avocodaMilk
     public GameObject Canvas4;//tomatoTofu
     public GameObject CanvasTrash;
+    public bool yummyMeal;
+    private string sceneName;
 
     void Start()
     {
-        
+        //get scene info
+        Scene currentScene = SceneManager.GetActiveScene();
+        sceneName = currentScene.name;
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void CheckSceneStateAndMeal()
+    {
+        switch (sceneName)
+        {
+            case "BlankAR":
+                if (ImageTracking.CookCasesToCanvas == 1)
+                {
+                    yummyMeal = true;
+                }
+                else
+                {
+                    yummyMeal = false;
+                }
+                break;
+            case "ATwo":
+                if (ImageTracking.CookCasesToCanvas == 3)
+                {
+                    yummyMeal = true;
+                }
+                else
+                {
+                    yummyMeal = false;
+                }
+                break;
+            case "BOne":
+                if (ImageTracking.CookCasesToCanvas == 2)
+                {
+                    yummyMeal = true;
+                }
+                else
+                {
+                    yummyMeal = false;
+                }
+                break;
+            case "BTwo":
+                if (ImageTracking.CookCasesToCanvas == 4)
+                {
+                    yummyMeal = true;
+                }
+                else
+                {
+                    yummyMeal = false;
+                }
+                break;
+            default:
+                Debug.Log("cook trash");
+                yummyMeal = false;
+                break;
+
+        }
+            
+
+    }
+
+    public void CheckYummyOrNot()
+    {
+        if (yummyMeal) {
+            YummyAnimationPlay();
+            YummyDestroy();
+        }
+        else//not yummy-- yummyMeal==false
+        {
+            DisgustAnimationPlay();
+        }
     }
 
     public void CreatePrefab()
@@ -73,6 +146,7 @@ public class InstantiateDestroy : MonoBehaviour
         Destroy(PinpleAnimationPrefab, PinpleTime);
     }
 
+    //yummy animation
     public void YummyAnimationPlay()
     {
         Instantiate(YummyAnimationPrefab, AniCanvas.transform);
@@ -103,7 +177,7 @@ public class InstantiateDestroy : MonoBehaviour
         //my code here after 3 seconds
         //cookafterCanvas.SetActive(true);
         switch (ImageTracking.CookCasesToCanvas)
-        {
+        {//control the meal
             case 1:
                 Canvas1.SetActive(true);
                 break;
@@ -117,7 +191,7 @@ public class InstantiateDestroy : MonoBehaviour
                 Canvas4.SetActive(true);
                 break;
 
-            default://error matching - show trash
+            default://error matching - show trash - cases 0
                 CanvasTrash.SetActive(true);
                 break;
 

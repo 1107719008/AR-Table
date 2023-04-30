@@ -42,6 +42,21 @@ public class SceneSwitcher : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    public void SwitchToBOne()
+    {
+        SceneManager.LoadScene("BOne");
+    }
+    public void SwitchToATwo()
+    {
+        SceneManager.LoadScene("ATwo");
+    }
+    public void SwitchToBTwo()
+    {
+        SceneManager.LoadScene("BTwo");
+    }
+
+
+
 
 }
 
