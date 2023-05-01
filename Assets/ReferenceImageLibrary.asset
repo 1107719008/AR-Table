@@ -59,9 +59,9 @@ MonoBehaviour:
       m_GuidLow: 4918518576505675350
       m_GuidHigh: 1511408848136885895
     m_SerializedTextureGuid:
-      m_GuidLow: 13007464648258718903
-      m_GuidHigh: 3701720600183855547
-    m_Size: {x: 0.1, y: 0.08673684}
+      m_GuidLow: 353937651925468472
+      m_GuidHigh: 3608074637483555178
+    m_Size: {x: 0.1, y: 0.09265823}
     m_SpecifySize: 1
     m_Name: tofu
     m_Texture: {fileID: 0}
@@ -69,9 +69,9 @@ MonoBehaviour:
       m_GuidLow: 5601621443515070086
       m_GuidHigh: 9126513874222760581
     m_SerializedTextureGuid:
-      m_GuidLow: 330206497173316163
-      m_GuidHigh: 8596956842045531115
-    m_Size: {x: 0.1, y: 0.09088937}
+      m_GuidLow: 9544647122961562332
+      m_GuidHigh: 16727787591022597704
+    m_Size: {x: 0.1, y: 0.09306667}
     m_SpecifySize: 1
     m_Name: avocado
     m_Texture: {fileID: 0}

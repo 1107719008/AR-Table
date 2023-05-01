@@ -168,7 +168,7 @@ public class ImageTracking : MonoBehaviour
                 object3 = trackedImage;
 
             }
-            else if (trackedImage.referenceImage.name == "avocoda")
+            else if (trackedImage.referenceImage.name == "avocado")
             {
                 object4 = trackedImage;
 
