@@ -36,7 +36,7 @@ public class InstantiateDestroy : MonoBehaviour
     public GameObject Canvas3;//avocodaMilk
     public GameObject Canvas4;//tomatoTofu
     public GameObject CanvasTrash;
-    public bool yummyMeal;
+    public static bool yummyMeal;
     private string sceneName;
 
     public GameObject forDestroyAnimation;
@@ -114,7 +114,7 @@ public class InstantiateDestroy : MonoBehaviour
     {
         if (yummyMeal) {
             YummyAnimationPlay();
-            YummyDestroy();
+            //YummyDestroy();
         }
         else//not yummy-- yummyMeal==false
         {
@@ -169,7 +169,7 @@ public class InstantiateDestroy : MonoBehaviour
     }
     public void YummyDestroy()
     {
-        GameObject toDel = GameObject.Find("yummy(Clone)");
+        GameObject toDel = GameObject.Find("yummyA(Clone)");
         Destroy(toDel);
     }
 
@@ -177,6 +177,7 @@ public class InstantiateDestroy : MonoBehaviour
     {
         forDestroyAnimation = Instantiate(DisgustAnimationPrefab, AniCanvas.transform);
         //Destroy(DisgustAnimationPrefab, DisgustTime);
+        textObj.text = "好難吃！我好想吐...";
     }
 
 
