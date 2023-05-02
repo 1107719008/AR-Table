@@ -5634,7 +5634,7 @@ MonoBehaviour:
   YummyAnimationPrefab: {fileID: 4495340546334699506, guid: 9219a235e058e4979af24e2c565b193a,
     type: 3}
   YummyTime: 3
-  DisgustAnimationPrefab: {fileID: 3237937619129749603, guid: 243fd86248be344cc9ba7655bf6fb65b,
+  DisgustAnimationPrefab: {fileID: 4190734956393363281, guid: 35ab6201ca9f341ad8744173ab395e78,
     type: 3}
   DisgustTime: 3
   WinAnimationPrefab: {fileID: 0}
