@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5685613173077587241}
   - component: {fileID: 2338807212783303281}
   m_Layer: 0
-  m_Name: tofu
+  m_Name: tofut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

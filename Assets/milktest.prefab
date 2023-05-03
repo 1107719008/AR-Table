@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 108864985080061326}
   - component: {fileID: 8003041581427790550}
   m_Layer: 0
-  m_Name: milk
+  m_Name: milktest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

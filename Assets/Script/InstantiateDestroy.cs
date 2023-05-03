@@ -26,7 +26,8 @@ public class InstantiateDestroy : MonoBehaviour
     public GameObject kitchenBG;
     public GameObject villageBG;
 
-    
+    //mission complete text
+    public Text completeText;
 
     public Text textObj;
 
@@ -53,7 +54,22 @@ public class InstantiateDestroy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(forDestroyAnimation.name);
+        Debug.Log(yummyMeal);
+        checkCompleteOrNot();
+
+    }
+
+    public void checkCompleteOrNot()
+    {
+        string textforwin;
+        if (yummyMeal) {
+            textforwin = "任務達成！";
+            completeText.text = textforwin.ToString();
+        } else
+        {
+            textforwin = "任務失敗！";
+            completeText.text = textforwin.ToString();
+        }
     }
 
     public void CheckSceneStateAndMeal()
@@ -119,14 +135,44 @@ public class InstantiateDestroy : MonoBehaviour
         else//not yummy-- yummyMeal==false
         {
             DisgustAnimationPlay();
+            
+        }
+    }
+    public void CheckYummythenDestroy()
+    {
+        if(yummyMeal) {
+            YummyDestroy();
+        }
+        else//not yummy-- yummyMeal==false
+        {
+            DisgustDestroy();
         }
     }
 
-    public void CreatePrefab()
+    public void CheckOkayOrNot()
     {
-
-
+        if (yummyMeal)
+        {
+            OkayAnimationPlay();
+        }
+        else
+        {
+            DisgustAnimationPlay();
+            textObj.text = "難吃又沒有效...";
+        }
     }
+    public void CheckOkaythenDestroy()
+    {
+        if (yummyMeal)
+        {
+            OkayDestroy();
+        }
+        else//not yummy-- yummyMeal==false
+        {
+            DisgustDestroy();
+        }
+    }
+
 
     public void DestroyPinple()
     {
@@ -179,7 +225,11 @@ public class InstantiateDestroy : MonoBehaviour
         //Destroy(DisgustAnimationPrefab, DisgustTime);
         textObj.text = "好難吃！我好想吐...";
     }
-
+    public void DisgustDestroy()
+    {
+        GameObject toDel = GameObject.Find("disgustA(Clone)");
+        Destroy(toDel);
+    }
 
     public void WinAnimationPlay()
     {
