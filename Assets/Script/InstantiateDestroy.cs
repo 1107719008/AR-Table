@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class InstantiateDestroy : MonoBehaviour
 {
-    [SerializeField]
+    
 
     public GameObject AniCanvas;//the canvas of animation -- for being parent
 
@@ -18,7 +18,9 @@ public class InstantiateDestroy : MonoBehaviour
     public int YummyTime;
     public GameObject DisgustAnimationPrefab;
     public int DisgustTime;
-    public GameObject WinAnimationPrefab;
+
+    
+    
     public int WinTime;
     public GameObject OkayAnimationPrefab;
     public int OkayTime;
@@ -31,7 +33,7 @@ public class InstantiateDestroy : MonoBehaviour
 
     public Text textObj;
 
-    [SerializeField]
+    
     public GameObject Canvas1;//tomatoegg
     public GameObject Canvas2;//potatocarrot
     public GameObject Canvas3;//avocodaMilk
@@ -40,7 +42,7 @@ public class InstantiateDestroy : MonoBehaviour
     public static bool yummyMeal;
     private string sceneName;
 
-    public GameObject forDestroyAnimation;
+    public GameObject forDestroyAnimation = null;
 
     void Start()
     {
@@ -48,6 +50,7 @@ public class InstantiateDestroy : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         sceneName = currentScene.name;
 
+        
 
     }
 
@@ -238,13 +241,6 @@ public class InstantiateDestroy : MonoBehaviour
         GameObject toDel = GameObject.Find("disgustA(Clone)");
         Destroy(toDel);
     }
-
-    public void WinAnimationPlay()
-    {
-        Instantiate(WinAnimationPrefab, AniCanvas.transform);
-        //Destroy(WinAnimationPrefab, WinTime);
-    }
-
 
     IEnumerator waiter()
     {

@@ -13,10 +13,15 @@ public class VideoController : MonoBehaviour
     {
         videoPlayer = GetComponent<VideoPlayer>();
         videoPlayer.loopPointReached += OnVideoEnd;
+       
     }
 
     private void OnVideoEnd(VideoPlayer vp)
     {
+        Resources.UnloadUnusedAssets();
+        System.GC.Collect();
+        sceneA = "FirstSpace";
         SceneManager.LoadScene(sceneA);
+        
     }
 }
