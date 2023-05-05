@@ -59,6 +59,14 @@ public class InstantiateDestroy : MonoBehaviour
 
     }
 
+    public void DeleteAllAnimationChildren()
+    {
+        foreach (Transform child in AniCanvas.transform)
+        {
+            Destroy(child.gameObject);
+        }
+    }
+
     public void checkCompleteOrNot()
     {
         string textforwin;

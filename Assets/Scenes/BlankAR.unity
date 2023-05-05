@@ -4006,7 +4006,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1256250611}
         m_TargetAssemblyTypeName: InstantiateDestroy, Assembly-CSharp
-        m_MethodName: DestroyPinple
+        m_MethodName: DeleteAllAnimationChildren
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
