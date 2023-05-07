@@ -11,7 +11,7 @@ public class ImageTracking : MonoBehaviour
     //cook botton code - cook or pass cook
     //public Button cookBtn;
     public Button passCookBtn;
-    private int CookCases = 0;
+    private static int CookCases = 0;
     public static int CookCasesToCanvas = 0;
 
     //for detect matching status
@@ -57,9 +57,10 @@ public class ImageTracking : MonoBehaviour
     {
         MatchStatus.text = CookCases.ToString();
     }
-    void checkCookStyle()
+    public static void checkCookStyle()
     {
         CookCasesToCanvas = CookCases;
+        Debug.Log("checking cook style");
     }
 
     //btn listener

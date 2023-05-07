@@ -262,6 +262,10 @@ public class InstantiateDestroy : MonoBehaviour
         Destroy(toDel);
     }
 
+    //check style cases for image tracking
+    
+
+
     IEnumerator waiter()
     {
         yield return new WaitForSeconds(3f);
