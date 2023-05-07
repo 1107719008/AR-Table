@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 8639088622500522251}
   - component: {fileID: 4633059157753996974}
   - component: {fileID: 7471218379330474596}
+  - component: {fileID: -2406389323395169779}
   m_Layer: 0
   m_Name: tomato
   m_TagString: Untagged
@@ -163,3 +164,15 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-2406389323395169779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8984652635310355377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbc42d19afc9442ce8b620db78779dd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

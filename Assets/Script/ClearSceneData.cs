@@ -8,9 +8,9 @@ using System;
  {
      //异步对象
      private AsyncOperation async;
- 
-     //下一个场景的名称
-     private static string nextSceneName="BlankAR";
+
+    //下一个场景的名称
+    public static string nextSceneName="BlankAR";
  
      void Awake()
      {

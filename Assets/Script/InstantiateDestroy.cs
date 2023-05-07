@@ -39,10 +39,15 @@ public class InstantiateDestroy : MonoBehaviour
     public GameObject Canvas3;//avocodaMilk
     public GameObject Canvas4;//tomatoTofu
     public GameObject CanvasTrash;
-    public static bool yummyMeal;
+    public bool yummyMeal;
     private string sceneName;
 
     public GameObject forDestroyAnimation = null;
+
+    public Text CanvasState;
+    public Text ifyum;
+
+    public int countCall=0;
 
     void Start()
     {
@@ -58,8 +63,11 @@ public class InstantiateDestroy : MonoBehaviour
     void Update()
     {
         Debug.Log(yummyMeal);
+        Debug.Log("cookcase-imagetracking: "+ImageTracking.CookCasesToCanvas);
         checkCompleteOrNot();
-
+        CanvasState.text = ImageTracking.CookCasesToCanvas.ToString();
+        ifyum.text = yummyMeal.ToString();
+        Debug.Log(sceneName);
     }
 
     public void DeleteAllAnimationChildren()
@@ -85,46 +93,57 @@ public class InstantiateDestroy : MonoBehaviour
 
     public void CheckSceneStateAndMeal()
     {
+        countCall++;
+        Debug.Log("checkscenestate and meal is called"+countCall);
         switch (sceneName)
         {
             case "BlankAR":
                 if (ImageTracking.CookCasesToCanvas == 1)
                 {
                     yummyMeal = true;
+                    Debug.Log("yummy true 1");
                 }
                 else
                 {
                     yummyMeal = false;
+
+                    Debug.Log("yummy false 1");
                 }
                 break;
             case "ATwo":
                 if (ImageTracking.CookCasesToCanvas == 3)
                 {
                     yummyMeal = true;
+                    Debug.Log("yummy true 3");
                 }
                 else
                 {
                     yummyMeal = false;
+                    Debug.Log("yummy false 3");
                 }
                 break;
             case "BOne":
                 if (ImageTracking.CookCasesToCanvas == 2)
                 {
                     yummyMeal = true;
+                    Debug.Log("yummy true 2");
                 }
                 else
                 {
                     yummyMeal = false;
+                    Debug.Log("yummy false 2");
                 }
                 break;
             case "BTwo":
                 if (ImageTracking.CookCasesToCanvas == 4)
                 {
                     yummyMeal = true;
+                    Debug.Log("yummy true 4");
                 }
                 else
                 {
                     yummyMeal = false;
+                    Debug.Log("yummy false 4");
                 }
                 break;
             default:
@@ -165,6 +184,7 @@ public class InstantiateDestroy : MonoBehaviour
         if (yummyMeal)
         {
             OkayAnimationPlay();
+            
         }
         else
         {

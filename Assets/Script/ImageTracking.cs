@@ -20,7 +20,7 @@ public class ImageTracking : MonoBehaviour
     //for different Canvas
     
     public Button setCookBtn;
-
+    
 
     // Reference to AR tracked image manager component
     private ARTrackedImageManager _trackedImagesManager;
