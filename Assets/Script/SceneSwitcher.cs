@@ -54,8 +54,23 @@ public class SceneSwitcher : MonoBehaviour
     {
         SceneManager.LoadScene("BTwo");
     }
+    public void SwitchToFinish()
+    {
+        SceneManager.LoadScene("FinishScene");
+    }
+    public void SwitchToStart()
+    {
+        SceneManager.LoadScene("StartScene");
+    }
 
+    public void RestartGame()
+    {
+        // 释放当前场景所有未释放资源
+        Resources.UnloadUnusedAssets();
 
+        // 加载第一个场景，释放当前场景的所有对象和资源
+        SceneManager.LoadScene(0, LoadSceneMode.Single);
+    }
 
 
 }

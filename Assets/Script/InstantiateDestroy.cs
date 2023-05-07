@@ -181,6 +181,7 @@ public class InstantiateDestroy : MonoBehaviour
 
     public void CheckOkayOrNot()
     {
+        DeleteAllAnimationChildren();
         if (yummyMeal)
         {
             OkayAnimationPlay();
@@ -230,7 +231,7 @@ public class InstantiateDestroy : MonoBehaviour
     {
         forDestroyAnimation = Instantiate(OkayAnimationPrefab, AniCanvas.transform);
         
-        textObj.text = "太好了！痘痘的情況改善了！";
+        textObj.text = "太好了！不舒服的症狀改善了！";
     }
     public void OkayDestroy()
     {
