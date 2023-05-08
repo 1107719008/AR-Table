@@ -758,7 +758,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f1d4992ae8b7849e2afc78d004306f02, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1eef2c10fde40425b8353ae48f89ee33, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1057,7 +1057,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: df9dc73d9d2fe49f597df5937e434d40, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 138584320f771429cadfa27c06219d48, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2314,9 +2314,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.4
-  m_Text: "\u78B3\u6C34\u5316\u5408\u7269\uFF1A\u4E0D\u9650 \u86CB\u767D\u8CEA\uFF1A\u4E0D\u9650
-    \u6CB9\u8102\uFF1A\u6700\u9AD82 \u2605 \u7DAD\u751F\u7D20\uFF1A\u6700\u4F4E3
-    \u2605 \u7926\u7269\u8CEA\uFF1A\u4E0D\u9650"
+  m_Text: "\u78B3\u6C34\u5316\u5408\u7269 : \u4E0D\u9650\n\u86CB\u767D\u8CEA : \u4E0D\u9650\n\u6CB9\u8102
+    :  \u6700\u9AD83\u2605\n\u7DAD\u751F\u7D20 :  \u6700\u4F4E2\u2605\n\u7926\u7269\u8CEA
+    :  \u6700\u4F4E6\u2605"
 --- !u!222 &306829821
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2925,7 +2925,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &332849192
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3138,8 +3138,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.4
-  m_Text: "\u78B3\u6C34\u5316\u5408\u7269 : 7\u2605\n\u86CB\u767D\u8CEA : 2\u2605\n\u6CB9\u8102
-    :  0\u2605\n\u7DAD\u751F\u7D20 :  8\u2605\n\u7926\u7269\u8CEA :  7\u2605\n"
+  m_Text: "\u78B3\u6C34\u5316\u5408\u7269 : 8\u2605\n\u86CB\u767D\u8CEA : 1\u2605\n\u6CB9\u8102
+    :  0\u2605\n\u7DAD\u751F\u7D20 :  5\u2605\n\u7926\u7269\u8CEA :  7\u2605"
 --- !u!222 &366681741
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3812,7 +3812,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 455840030}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 678112751}
+        m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
+        m_MethodName: SwitchToNextScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &455840030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9006,7 +9018,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1074702356
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9631,7 +9643,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dac5a253657fc4485929381a9db0d85c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f1d4992ae8b7849e2afc78d004306f02, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11901,7 +11913,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1457398680
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12591,7 +12603,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 72eaf0a46a45c4c1ba49143c4624144e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 656b2114d33a946d8bc8dc795f74c339, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -15067,7 +15079,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 44ac92d52cb134ace9490d9f6bbc8d43, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2d4613fc25a0546fb924d8c1a1b48e49, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15807,8 +15819,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 311, y: -336}
-  m_SizeDelta: {x: 2317.2, y: 1440.6}
+  m_AnchoredPosition: {x: 40, y: -336}
+  m_SizeDelta: {x: 1763, y: 1440.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1886154434
 MonoBehaviour:
@@ -15842,9 +15854,9 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "\u591A\u5403\u542B\u8907\u5408\u6027\u78B3\u6C34\u5316\u5408\u7269\u7684\u98DF\u7269\uFF1A\u7CD9\u7C73\u3001\u5168\u9EA5\u9EB5\u5305\u3001\u96DC\u7CE7\u9EB5\u5305\u7B49\n\n\u591A\u88DC\u5145\u7DAD\u751F\u7D20B12\u3001\u8449\u9178\u3001\u9435\u7B49\u70BA\u9019\u4E9B\u71DF\u990A\u7D20\u80FD\u7DAD\u6301\u5065\u5EB7\u7684\u7D05\u8840\u7403\u3002
-    \u2027\u5BCC\u542B\u7DAD\u751F\u7D20B12\u7684\u98DF\u7269\uFF1A \u6709\u5C0F\u9B5A\u5E72\u3001\u7261\u8823\u3001\u8C6C\u809D\u3001\u9BAD\u9B5A\u3001\u79CB\u5200\u9B5A\u7B49\u3002\n\n\u591A\u5403\u542B\u92C5\u3001\u9382\u7B49\u98DF\u7269:\u7261\u8823\u3001\u725B\u8089\u3001\u767D\u829D\u9EBB\u3001\u7D05\u87F3\n"
+    m_LineSpacing: 1.1
+  m_Text: "\u591A\u5403\u542B\u8907\u5408\u6027\u78B3\u6C34\u5316\u5408\u7269\u7684\u98DF\u7269\uFF1A\u7CD9\u7C73\u3001\u5168\u9EA5\u9EB5\u5305\u3001\u96DC\u7CE7\u9EB5\u5305\u7B49\n\n\u591A\u88DC\u5145\u7DAD\u751F\u7D20B12\u3001\u8449\u9178\u3001\u9435\u7B49\u70BA\u9019\u4E9B\u71DF\u990A\u7D20\u80FD\u7DAD\u6301\u5065\u5EB7\u7684\u7D05\u8840\u7403\n\u5BCC\u542B\u7DAD\u751F\u7D20B12\u7684\u98DF\u7269\uFF1A
+    \u6709\u5C0F\u9B5A\u5E72\u3001\u7261\u8823\u3001\u8C6C\u809D\u3001\u9BAD\u9B5A\u3001\u79CB\u5200\u9B5A\u7B49\n\n\u591A\u5403\u542B\u92C5\u3001\u9382\u7B49\u98DF\u7269:\u7261\u8823\u3001\u725B\u8089\u3001\u767D\u829D\u9EBB\u3001\u7D05\u87F3\n\n\u591A\u5403\u6297\u6C27\u5316\u7684\u71DF\u990A\u7D20(\u5982\u7DAD\u751F\u7D20\uFF23\u3001\uFF25)\u3002\n\u5BCC\u542B\u7DAD\u751F\u7D20\uFF23\u7684\u98DF\u7269\u6709\uFF1A\u751C\u6912\u3001\u7DA0\u8C46\u82BD\u3001\u5947\u7570\u679C\u3001\u8543\u77F3\u69B4\u3001\u6728\u74DC\u3001\u82B1\u6930\u83DC\u3001\u8543\u8304\u3002\n\u5BCC\u542B\u7DAD\u751F\u7D20E\u7684\u98DF\u7269\u6709\uFF1A\u8475\u74DC\u5B50\u3001\u829D\u9EBB\u91AC\u3001\u82B1\u751F\u91AC\u3001\u5C0F\u9EA5\u80DA\u82BD\u3001\u677E\u5B50\u7B49\u3002\n\n"
 --- !u!222 &1886154435
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16680,7 +16692,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5f7652245284e414fa7e12d66b784d17, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b0c14470b70634ad1b1d072d27fb4546, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -821,7 +821,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &150925016
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2814,7 +2814,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6709\u75C7\u72C0\u6642\u7ACB\u5373\u9032\u98DF\u6613\u5438\u6536\u542B\u7CD6\u98DF\u7269\uFF1A\u534A\u676F\u679C\u6C41\u3001\u4E00\u5927\u5319\u8702\u871C\u62163\n\uFF5E4\u9846\u65B9\u7CD6\u3001\u7CD6\u679C\u3002"
+  m_Text: "\u6709\u75C7\u72C0\u6642\u7ACB\u5373\u9032\u98DF\u6613\u5438\u6536\u542B\u7CD6\u98DF\u7269\uFF1A\u534A\u676F\u679C\u6C41\u3001\u4E00\u5927\u5319\u8702\u871C\u6216\n3\uFF5E4\u9846\u65B9\u7CD6\u3001\u7CD6\u679C\u3002\n\n\u5E73\u6642\u591A\u5403\u542B\u8907\u5408\u6027\u78B3\u6C34\u5316\u5408\u7269\u7684\u98DF\u7269\uFF1A\u7CD9\u7C73\u3001\u5168\u9EA5\u9EB5\u5305\u3001\u96DC\u7CE7\n\u9EB5\u5305\u7B49\n\n\u76E1\u91CF\u4E0D\u5403\u6216\u5C11\u5403\u5BCC\u542B\u98FD\u548C\u8102\u80AA\u9178\u7684\u8C6C\u6CB9\u3001\u725B\u6CB9\u3001\u6D0B\u6CB9\u3001\u5976\u6CB9\u3001\u9EC3\n\u6CB9\uFF0C\u53EF\u7528\u690D\u7269\u6CB9\u4EE3\u66FF\u90E8\u5206\u52D5\u7269\u6CB9\u3002\n\n\u76E1\u91CF\u5C11\u5403\u7CBE\u88FD\u53CA\u52A0\u5DE5\u7522\u54C1(\u4F8B\u5982\uFF0C\u901F\u98DF\u7C73\u53CA\u99AC\u9234\u85AF)\u3001\u767D\u9EB5\u7C89\u3001\u6C7D\n\u6C34\u3001\u9152\u3001\u9E7D\u3002\u907F\u514D\u7CD6\u5206\u9AD8\u7684\u6C34\u679C\u53CA\u679C\u6C41(\u4F8B\u5982\uFF0C\u8461\u8404\u6C41\u6DF7\u540850%\u7684\n\u6C34\u98F2\u7528)\u3002\n"
 --- !u!222 &319260470
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5602,19 +5602,7 @@ MonoBehaviour:
   - eventID: 4
     callback:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 318883008}
-          m_TargetAssemblyTypeName: ImageTracking, Assembly-CSharp
-          m_MethodName: checkCookStyle
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
 --- !u!114 &592251870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5658,55 +5646,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 592251871}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1463109753}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1804595737}
-        m_TargetAssemblyTypeName: InstantiateDestroy, Assembly-CSharp
-        m_MethodName: CookAnimationPlay
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 239197489}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2146189464}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &592251871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7497,6 +7437,7 @@ GameObject:
   - component: {fileID: 813546452}
   - component: {fileID: 813546451}
   - component: {fileID: 813546450}
+  - component: {fileID: 813546453}
   m_Layer: 5
   m_Name: Button1
   m_TagString: Untagged
@@ -7563,17 +7504,53 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 813546451}
+  m_TargetGraphic: {fileID: 592251871}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1463109753}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1804595737}
+        m_TargetAssemblyTypeName: InstantiateDestroy, Assembly-CSharp
+        m_MethodName: CookAnimationPlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 239197489}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2146189464}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -7599,7 +7576,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 44ac92d52cb134ace9490d9f6bbc8d43, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2d4613fc25a0546fb924d8c1a1b48e49, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7617,6 +7594,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 813546448}
   m_CullTransparentMesh: 1
+--- !u!114 &813546453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813546448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 318883008}
+          m_TargetAssemblyTypeName: ImageTracking, Assembly-CSharp
+          m_MethodName: checkCookStyle
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &821103103
 GameObject:
   m_ObjectHideFlags: 0
@@ -8999,7 +9005,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &984933605
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11623,7 +11629,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f1d4992ae8b7849e2afc78d004306f02, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1eef2c10fde40425b8353ae48f89ee33, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13804,7 +13810,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1652075407}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 453058532}
+        m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
+        m_MethodName: SwitchToNextScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1652075407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14957,7 +14975,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 680, y: 500}
+  m_SizeDelta: {x: 700, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1798377645
 MonoBehaviour:
@@ -14992,9 +15010,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.4
-  m_Text: "\u78B3\u6C34\u5316\u5408\u7269\uFF1A\u4E0D\u9650 \u86CB\u767D\u8CEA\uFF1A\u4E0D\u9650
-    \u6CB9\u8102\uFF1A\u6700\u9AD82 \u2605 \u7DAD\u751F\u7D20\uFF1A\u6700\u4F4E3
-    \u2605 \u7926\u7269\u8CEA\uFF1A\u4E0D\u9650"
+  m_Text: "\u78B3\u6C34\u5316\u5408\u7269\uFF1A\u6700\u4F4E5\u2605 \u86CB\u767D\u8CEA\uFF1A\u6700\u9AD82\u2605
+    \u6CB9\u8102\uFF1A\u4E0D\u9650 \u7DAD\u751F\u7D20\uFF1A\u4E0D\u9650  \u7926\u7269\u8CEA\uFF1A\u4E0D\u9650"
 --- !u!222 &1798377646
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15488,8 +15505,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.4
-  m_Text: "\u78B3\u6C34\u5316\u5408\u7269 : 7\u2605\n\u86CB\u767D\u8CEA : 2\u2605\n\u6CB9\u8102
-    :  0\u2605\n\u7DAD\u751F\u7D20 :  8\u2605\n\u7926\u7269\u8CEA :  7\u2605\n"
+  m_Text: "\u78B3\u6C34\u5316\u5408\u7269 : 8\u2605\n\u86CB\u767D\u8CEA : 1\u2605\n\u6CB9\u8102
+    :  0\u2605\n\u7DAD\u751F\u7D20 :  5\u2605\n\u7926\u7269\u8CEA :  7\u2605"
 --- !u!222 &1816214916
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17382,7 +17399,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2062334113
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17958,7 +17975,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dac5a253657fc4485929381a9db0d85c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f1d4992ae8b7849e2afc78d004306f02, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

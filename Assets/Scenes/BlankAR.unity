@@ -2286,8 +2286,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.4
-  m_Text: "\u78B3\u6C34\u5316\u5408\u7269 : 7\u2605\n\u86CB\u767D\u8CEA : 2\u2605\n\u6CB9\u8102
-    :  0\u2605\n\u7DAD\u751F\u7D20 :  8\u2605\n\u7926\u7269\u8CEA :  7\u2605\n"
+  m_Text: "\u78B3\u6C34\u5316\u5408\u7269 : 8\u2605\n\u86CB\u767D\u8CEA : 1\u2605\n\u6CB9\u8102
+    :  0\u2605\n\u7DAD\u751F\u7D20 :  5\u2605\n\u7926\u7269\u8CEA :  7\u2605"
 --- !u!222 &789832784
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2857,7 +2857,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 44ac92d52cb134ace9490d9f6bbc8d43, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2d4613fc25a0546fb924d8c1a1b48e49, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3124,7 +3124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &933344531
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3667,7 +3667,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1015359834
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4726,7 +4726,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dac5a253657fc4485929381a9db0d85c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f1d4992ae8b7849e2afc78d004306f02, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5258,7 +5258,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f1d4992ae8b7849e2afc78d004306f02, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1eef2c10fde40425b8353ae48f89ee33, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5731,7 +5731,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 516020467
   m_SortingLayer: 1
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d0ad88421651b47da887602db03c3a63, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6785,7 +6785,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 516020467
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 2e5db7a7cf813479f9efedc4ef9c7566, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6961,7 +6961,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1534453784}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1654488067}
+        m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
+        m_MethodName: SwitchToNextScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1534453784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7753,6 +7765,7 @@ MonoBehaviour:
   - {fileID: 9080658505731178594, guid: 4219e3cf0617b4727a8241860d7c9243, type: 3}
   - {fileID: 6681623590778230321, guid: 610281287e92b40b9ab70d132a30e6e9, type: 3}
   - {fileID: 6374160490923043117, guid: dc824e874e8704fb08f5dcf06db61378, type: 3}
+  - {fileID: 7496511652188676055, guid: e82ef0c69b3944c60991d9f4d6b08b9b, type: 3}
 --- !u!114 &1659859602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7862,7 +7875,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1689498076
 RectTransform:
   m_ObjectHideFlags: 0

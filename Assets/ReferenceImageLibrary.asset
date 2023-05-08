@@ -85,3 +85,13 @@ MonoBehaviour:
     m_SpecifySize: 1
     m_Name: milk
     m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4729344104822661726
+      m_GuidHigh: 4550028969707135374
+    m_SerializedTextureGuid:
+      m_GuidLow: 17584500037100999947
+      m_GuidHigh: 12769431785385045835
+    m_Size: {x: 0.1, y: 0.09417249}
+    m_SpecifySize: 1
+    m_Name: pumpkin
+    m_Texture: {fileID: 0}

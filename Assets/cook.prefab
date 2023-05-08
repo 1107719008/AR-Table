@@ -86,6 +86,7 @@ GameObject:
   - component: {fileID: 3237937619129749602}
   - component: {fileID: 3237937619129749600}
   - component: {fileID: 3237937619129749601}
+  - component: {fileID: 2028711232567639462}
   m_Layer: 5
   m_Name: cook
   m_TagString: Untagged
@@ -152,6 +153,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2028711232567639462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3237937619129749603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde20d951bca04d3db9bc43fb7c05e74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kitchenImage: {fileID: 3237937619129749601}
+  aImage: {fileID: 21300000, guid: df9dc73d9d2fe49f597df5937e434d40, type: 3}
+  bImage: {fileID: 21300000, guid: 138584320f771429cadfa27c06219d48, type: 3}
 --- !u!1001 &3237937618494892927
 PrefabInstance:
   m_ObjectHideFlags: 0
